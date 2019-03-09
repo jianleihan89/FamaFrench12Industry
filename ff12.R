@@ -1,5 +1,5 @@
-###fama industry
-primary$ffind=0
+###name your dataset as primary
+primary$ffind=0  ##create an variable to indicate Fama-French industry
 #1 NoDur  Consumer NonDurables -- Food, Tobacco, Textiles, Apparel, Leather, Toys
 primary$ffind[((primary$sic>=100)&(primary$sic<=999))|((primary$sic>=2000)&(primary$sic<=2399))|((primary$sic>=2700)&(primary$sic<=2749))|((primary$sic>=2770)&(primary$sic<=2799))|((primary$sic>=3100)&(primary$sic<=3199))|((primary$sic>=3940)&(primary$sic<=3989))]=1
 #2 Durbl  Consumer Durables -- Cars, TV's, Furniture, Household Appliances
